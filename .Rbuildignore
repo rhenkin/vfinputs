@@ -3,3 +3,4 @@
 ^visualtests$
 ^README\.Rmd$
 ^cran-comments.md$
+^\.travis\.yml$
