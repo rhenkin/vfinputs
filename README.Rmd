@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # vfinputs
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=master)](https://travis-ci.org/rhenkin/vfinputs)
+[![Travis build status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=main)](https://travis-ci.org/rhenkin/vfinputs)
 <!-- badges: end -->
 
 `vfinputs` provides **v**isual **f**ilter **inputs** for Shiny apps. The current version includes color legends that enable users of Shiny apps to interactively set numeric and categorical filters. Shiny programmers can use the values returned by the inputs to coordinate filtering across multiple outputs, using a unified color legend rather than those rendered by a plotting package.
