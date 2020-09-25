@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=master)](https://travis-ci.org/rhenkin/vfinputs)
+status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=main)](https://travis-ci.org/rhenkin/vfinputs)
 <!-- badges: end -->
 
 `vfinputs` provides **v**isual **f**ilter **inputs** for Shiny apps. The
