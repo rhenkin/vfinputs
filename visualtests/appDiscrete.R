@@ -28,17 +28,11 @@ ui <- fluidPage(
                                      data = mtcars$mpg, n =10),
                  discreteColorFilter("test_discrete_ccc",   palette = list("#ff0000", "white", "#0000ff") ,
                                      data = mtcars$mpg, n =15)),
-
-      #categoricalColorFilter("test5", data = sort(mtcars$gear), orient = "right", scheme = "category10"),
       verbatimTextOutput("selection")
 )
 
 server <- function(input, output, session) {
 
-  # output$selection <- renderPrint(
-  #   if (!is.null(input$test))
-  #   paste0(input$test$start,",",input$test$end)
-  # )
 
   observeEvent(input$test, {
 

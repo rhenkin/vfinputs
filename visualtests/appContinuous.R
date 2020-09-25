@@ -1,10 +1,5 @@
-# source("R/utils.R")
-# source("R/drawShapes.R")
-# source("R/baseLegends.R")
-# source("R/colorFilters.R")
-# source("R/update.R")
-
-devtools::load_all('.', reset = TRUE, export_all = FALSE)
+library(shiny)
+library(vfinputs)
 
 ui <- fluidPage(
       #Test ORIENT and COLOR -----------------------------------------------------------
@@ -56,16 +51,11 @@ ui <- fluidPage(
       flowLayout(continuousColorFilter("test_ticks1", data = mtcars$mpg, palette = colorRamps::blue2red, options = list(ticks = 0)),
                  continuousColorFilter("test_ticks2", data = mtcars$mpg, palette = colorRamps::blue2red, options = list(ticks = 2))),
 
-      #categoricalColorFilter("test5", data = sort(mtcars$gear), orient = "right", scheme = "category10"),
+
       verbatimTextOutput("selection")
 )
 
 server <- function(input, output, session) {
-
-  # output$selection <- renderPrint(
-  #   if (!is.null(input$test))
-  #   paste0(input$test$start,",",input$test$end)
-  # )
 
   observeEvent(input$test, {
 
