@@ -28,7 +28,7 @@ updateCategoricalFilter(
 Change a categorical legend in the client
 }
 \details{
-This function only affects the label and the selection. Re-creating the items requires deleting and re-creating the legend using \link[shinyjs]{shinyjs}, for example.
+This function only affects the label and the selection. Re-creating the items requires deleting and re-creating the legend using \code{shinyjs}, for example.
 }
 \seealso{
 \code{\link[=categoricalColorFilter]{categoricalColorFilter()}}

@@ -35,7 +35,7 @@ Change a numeric legend filter in the client
 }
 \details{
 This function only affects the label and JavaScript-implemented axis and brush values and selection.
-Re-creating the color strips and changing the ticks and format of values requires deleting and re-creating the legend using \link[shinyjs]{shinyjs}, for example.
+Re-creating the color strips and changing the ticks and format of values requires deleting and re-creating the legend using \code{shinyjs}, for example.
 }
 \seealso{
 \code{\link[=continuousColorFilter]{continuousColorFilter()}} \code{\link[=discreteColorFilter]{discreteColorFilter()}}
