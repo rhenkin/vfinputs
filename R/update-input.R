@@ -1,7 +1,7 @@
 #' @title Change a numeric legend filter in the client
 #'
 #' @details This function only affects the label and JavaScript-implemented axis and brush values and selection.
-#'  Re-creating the color strips and changing the ticks and format of values requires deleting and re-creating the legend using \link[shinyjs]{shinyjs}, for example.
+#'  Re-creating the color strips and changing the ticks and format of values requires deleting and re-creating the legend using `shinyjs`, for example.
 #'
 #' @param session The `session` object passed to function given to
 #'   `shinyServer`.
@@ -22,7 +22,7 @@ updateNumericFilter <- function(session, inputId, label = NULL, start = NULL, en
 
 #' Change a categorical legend in the client
 #'
-#' @details This function only affects the label and the selection. Re-creating the items requires deleting and re-creating the legend using \link[shinyjs]{shinyjs}, for example.
+#' @details This function only affects the label and the selection. Re-creating the items requires deleting and re-creating the legend using `shinyjs`, for example.
 #'
 #' @param session The `session` object passed to function given to
 #'   `shinyServer`.
