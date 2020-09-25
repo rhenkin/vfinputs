@@ -1,5 +1,6 @@
 ## Test environments
 * local macOS Mojave install, R 4.0.2
+* travis-ci, Ubuntu 16.04, R 4.0.2
 * win-builder
 
 # R RMD check results

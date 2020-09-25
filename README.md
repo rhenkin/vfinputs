@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=master)](https://travis-ci.org/rhenkin/vfinputs)
 <!-- badges: end -->
 
 `vfinputs` provides **v**isual **f**ilter **inputs** for Shiny apps. The
@@ -71,7 +73,8 @@ server <- function(input, output) {
  }
 ```
 
-For detailed examples see `visualtests` folder in this repository.
+For detailed examples of how to use the different arguments see the
+`visualtests` folder in this repository.
 
 ### Customizing and extending
 
