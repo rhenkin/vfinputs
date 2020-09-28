@@ -31,7 +31,7 @@ updateNumericFilter(
 \item{maxValue}{Maximum numeric value in the legend (can be lower the minimum for inverted scale).}
 }
 \description{
-Change a numeric legend filter in the client
+This function does not validate if a brush is already defined; updating only one of start or end with an empty brush will assign the other to NaN.
 }
 \details{
 This function only affects the label and JavaScript-implemented axis and brush values and selection.
@@ -39,4 +39,8 @@ Re-creating the color strips and changing the ticks and format of values require
 }
 \seealso{
 \code{\link[=continuousColorFilter]{continuousColorFilter()}} \code{\link[=discreteColorFilter]{discreteColorFilter()}}
+
+Other update functions: 
+\code{\link{updateCategoricalFilter}()}
 }
+\concept{update functions}

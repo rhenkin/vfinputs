@@ -32,4 +32,8 @@ This function only affects the label and the selection. Re-creating the items re
 }
 \seealso{
 \code{\link[=categoricalColorFilter]{categoricalColorFilter()}}
+
+Other update functions: 
+\code{\link{updateNumericFilter}()}
 }
+\concept{update functions}

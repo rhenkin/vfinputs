@@ -38,11 +38,12 @@ and \code{"right"} (vertical with labels on the right).}
 A visual filter input control that can be added to a UI definition.
 }
 \description{
-Add a visual filter input for discrete values
+The brush used in this filter snaps to evenly divided steps based on the number of colors passed as argument.
+With minValue = 0, maxValue = 100 and n = 5, it will snap at the edges (0 and 100) and 20, 40, 60, and 80.
 }
 \section{Server value}{
 
-\code{start} and \code{end} bounds of a selection. The default value (or empty selection) is \code{NULL}.
+\code{start} and \code{end} bounds of a selection. The input value is \code{NULL} for empty selections.
 
 
 \code{start} and \code{end} bounds of a selection. The default value is null.

@@ -61,8 +61,8 @@ $.extend(discreteLegendFilterBinding, {
       //let orient = $el.data("orient");
       let legend_scale = $el.data("legend_scale");
       let brush = $el.data("brush");
-      let start = data.hasOwnProperty("start") ? data.selection : brush.extent[0];
-      let end = data.hasOwnProperty("end") ? data.selection : brush.extent[1];
+      let start = data.hasOwnProperty("start") ? data.start : brush.extent[0];
+      let end = data.hasOwnProperty("end") ? data.end : brush.extent[1];
       let new_selection = [legend_scale(start), legend_scale(end)];
       brush.move($el.find("#g-filter-"+$el.attr("id")), new_selection);
     }

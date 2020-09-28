@@ -2,6 +2,7 @@ library(shiny)
 library(vfinputs)
 
 ui <- fluidPage(
+      flowLayout(actionButton("update_sel", "Change values selection")),
       #Test ORIENT and COLOR -----------------------------------------------------------
       flowLayout(continuousColorFilter("test_bottom", label = p("Test orientation and color"), minValue = 0, maxValue = 200, palette = scales::viridis_pal()),
       continuousColorFilter("test_top", minValue = 0, maxValue = 200,
@@ -56,6 +57,12 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+
+  observeEvent(input$update_sel, {
+
+    updateNumericFilter(session, "test_bottom", end = 50)
+
+  })
 
   observeEvent(input$test, {
 

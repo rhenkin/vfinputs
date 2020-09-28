@@ -38,11 +38,11 @@ and \code{"right"} (vertical with labels on the right).}
 A visual filter input control that can be added to a UI definition.
 }
 \description{
-Add a visual filter input for continuous values
+The brush used in this filter allows a free selection over the whole input range.
 }
 \section{Server value}{
 
-\code{start} and \code{end} bounds of a selection. The default value (or empty selection) is \code{NULL}.
+\code{start} and \code{end} bounds of a selection. The input value is \code{NULL} for empty selections.
 }
 
 \examples{

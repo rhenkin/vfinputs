@@ -1,5 +1,7 @@
 #' Add a visual filter input for continuous values
 #'
+#' @description The brush used in this filter allows a free selection over the whole input range.
+#'
 #' @inheritDotParams numericLegend
 #' @param inputId The `input` slot that will be used to access the value.
 #' @return A visual filter input control that can be added to a UI definition.
@@ -40,7 +42,7 @@
 #' }
 #'
 #' @section Server value:
-#' `start` and `end` bounds of a selection. The default value (or empty selection) is `NULL`.
+#' `start` and `end` bounds of a selection. The input value is `NULL` for empty selections.
 #'
 #' @import shiny
 #' @export
@@ -65,6 +67,9 @@ continuousColorFilter <- function(inputId, ...) {
 
 #' Add a visual filter input for discrete values
 #'
+#' @description The brush used in this filter snaps to evenly divided steps based on the number of colors passed as argument.
+#' With minValue = 0, maxValue = 100 and n = 5, it will snap at the edges (0 and 100) and 20, 40, 60, and 80.
+#'
 #' @inheritDotParams numericLegend
 #' @param inputId The `input` slot that will be used to access the value.
 #' @return A visual filter input control that can be added to a UI definition.
@@ -73,7 +78,7 @@ continuousColorFilter <- function(inputId, ...) {
 #' @seealso [numericLegend()]
 #'
 #' @section Server value:
-#' `start` and `end` bounds of a selection. The default value (or empty selection) is `NULL`.
+#' `start` and `end` bounds of a selection. The input value is `NULL` for empty selections.
 #'
 #' @import shiny
 #' @examples

@@ -1,5 +1,7 @@
 #' @title Change a numeric legend filter in the client
 #'
+#' @description This function does not validate if a brush is already defined; updating only one of start or end with an empty brush will assign the other to NaN.
+#'
 #' @details This function only affects the label and JavaScript-implemented axis and brush values and selection.
 #'  Re-creating the color strips and changing the ticks and format of values requires deleting and re-creating the legend using `shinyjs`, for example.
 #'
@@ -12,6 +14,7 @@
 #' @param minValue Minimum numeric value in the legend (can be higher the maximum for inverted scale).
 #' @param maxValue Maximum numeric value in the legend (can be lower the minimum for inverted scale).
 #'
+#' @family update functions
 #' @seealso [continuousColorFilter()] [discreteColorFilter()]
 #'
 #' @export
@@ -31,6 +34,7 @@ updateNumericFilter <- function(session, inputId, label = NULL, start = NULL, en
 #' @param select Items to be selected.
 #' @param deselect Items to be deselected.
 #'
+#' @family update functions
 #' @seealso [categoricalColorFilter()]
 #'
 #' @export
