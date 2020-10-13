@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# vfinputs
+# vfinputs <img src='man/figures/legendexample.png' align="right" height="80px" />
 
 <!-- badges: start -->
 
@@ -81,11 +81,11 @@ For detailed examples of how to use the different arguments see the
 **Ticks and labels**
 
 Under the hood, the axes and brushes are implemented using
-[D3.js](https://d3js.org). The `options` argument for the numeric scales
-can contain custom `"format"` for the labels and `"ticks"` for deciding
-which/how many ticks to show. For the supported format strings, please
-see <https://github.com/d3/d3-format#locale_format>. Ticks can be a
-number or a list with custom tick values to display.
+[D3.js](https://d3js.org/). The `options` argument for the numeric
+scales can contain custom `"format"` for the labels and `"ticks"` for
+deciding which/how many ticks to show. For the supported format strings,
+please see <https://github.com/d3/d3-format#locale_format>. Ticks can be
+a number or a list with custom tick values to display.
 
 **CSS**
 

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# vfinputs
+# vfinputs <img src='man/figures/legendexample.png' align="right" height="80px" />
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=main)](https://travis-ci.org/rhenkin/vfinputs)

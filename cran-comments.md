@@ -1,6 +1,11 @@
 ## Resubmission
 
 I have:
+* Removed LICENSE file
+* Updated LICENSE field in DESCRIPTION
+* Included a separate file under inst with a required copyright notice (the corresponding copyright holder was already included in the Authors@R)
+
+I have previously:
 * Fixed the date in DESCRIPTION
 * Fixed an http address to https in the README file.
 
