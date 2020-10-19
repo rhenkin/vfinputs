@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![](http://www.r-pkg.org/badges/version/vfinputs)](https://cran.r-project.org/package=vfinputs)
+[![](http://cranlogs.r-pkg.org/badges/last-month/vfinputs)](https://cran.r-project.org/package=vfinputs)
 [![Travis build
 status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=main)](https://travis-ci.org/rhenkin/vfinputs)
 <!-- badges: end -->
@@ -18,10 +20,9 @@ rendered by a plotting package.
 
 ## Installation
 
-You can install vfinputs with:
-
 ``` r
-remotes::install_github("rhenkin/vfinputs")
+# Install from CRAN
+install.packages("vfinputs")
 ```
 
 ## Usage

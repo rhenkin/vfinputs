@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 # vfinputs <img src='man/figures/legendexample.png' align="right" height="80px" />
 
 <!-- badges: start -->
+[![](http://www.r-pkg.org/badges/version/vfinputs)](https://cran.r-project.org/package=vfinputs)
+[![](http://cranlogs.r-pkg.org/badges/last-month/vfinputs)](https://cran.r-project.org/package=vfinputs)
 [![Travis build status](https://travis-ci.org/rhenkin/vfinputs.svg?branch=main)](https://travis-ci.org/rhenkin/vfinputs)
 <!-- badges: end -->
 
@@ -24,10 +26,9 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-You can install vfinputs with:
-
-``` r
-remotes::install_github("rhenkin/vfinputs")
+```{r eval =  FALSE} 
+# Install from CRAN
+install.packages("vfinputs")
 ```
 
 ## Usage
